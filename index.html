@@ -32,6 +32,7 @@
   h2 { font-size: 24px; font-weight: 500; margin: 56px 0 8px; letter-spacing: -0.005em; }
   h2 .num { color: var(--ink-soft); font-weight: 400; margin-right: 12px; }
   h3 { font-size: 18px; font-weight: 500; margin: 28px 0 10px; }
+  h4 { font-size: 14px; font-weight: 500; margin: 18px 0 8px; color: var(--ink); letter-spacing: 0.01em; }
   p { margin-bottom: 14px; color: var(--ink); }
   p.lead { font-size: 16px; color: var(--ink-muted); margin-bottom: 22px; }
   .tldr { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 8px; padding: 22px 26px; margin: 24px 0 8px; }
@@ -54,10 +55,20 @@
   .cost-card td { padding: 10px 6px; border-bottom: 1px solid var(--border); vertical-align: top; }
   .cost-card td.right { text-align: right; font-variant-numeric: tabular-nums; }
   .cost-card tr:last-child td { border-bottom: 0; }
+  .pro-con { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0 24px; }
+  .pc-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px 18px; }
+  .pc-box.pros { background: var(--green-bg); border-color: rgba(59,109,17,0.18); }
+  .pc-box.cons { background: var(--red-bg); border-color: rgba(163,45,45,0.16); }
+  .pc-box h4 { margin-top: 0; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
+  .pc-box.pros h4 { color: var(--green); }
+  .pc-box.cons h4 { color: var(--red); }
+  .pc-box ul { padding-left: 18px; margin: 0; }
+  .pc-box li { margin-bottom: 6px; font-size: 13.5px; line-height: 1.55; color: var(--ink); }
   .footer-note { margin-top: 56px; padding: 18px 22px; background: rgba(0,0,0,0.025); border-radius: 8px; font-size: 12.5px; color: var(--ink-muted); line-height: 1.55; }
   @media (max-width: 760px) {
     .wrap { padding: 32px 18px 64px; }
     .country-grid, .country-grid.three { grid-template-columns: 1fr; }
+    .pro-con { grid-template-columns: 1fr; }
     h1 { font-size: 26px; }
   }
 </style>
@@ -219,6 +230,29 @@
     </table>
   </div>
   <p style="font-size: 13px; color: var(--ink-soft);">Sample veg day to hit 100 g protein: 3 eggs (18 g) + 1 cup Greek yogurt (15 g) + 1 scoop whey (24 g) + 1 katori dal (9 g) + 1 katori rajma (8 g) + 100 g paneer (18 g) + 250 ml milk (8 g) = <strong>100 g</strong>. Spread across 4 meals.</p>
+</section>
+
+<section>
+  <h2><span class="num">05</span>Mistakes that kill beginner progress</h2>
+  <p class="lead">These are the patterns that derail 80% of Indian gym beginners in the first 3 months. None of them are about lifting harder.</p>
+  <div class="pro-con">
+    <div class="pc-box cons"><h4>Stop doing this</h4><ul>
+      <li><strong>"I'll start when I'm in better shape"</strong> — the entire point of the gym is to get into better shape. Show up at your current state.</li>
+      <li><strong>Switching programs every 2 weeks</strong> — no program shows results that fast. Give it 12 weeks before judging.</li>
+      <li><strong>Buying pre-workout / fat burners before whey</strong> — pre-workout is caffeine + marketing. Whey solves your actual problem (protein).</li>
+      <li><strong>Skipping leg day</strong> — legs are 50% of your body; ignoring them is half your effort wasted.</li>
+      <li><strong>Ego-lifting on bench press</strong> — too heavy + bad form = shoulder injury that takes 6 months to heal.</li>
+      <li><strong>Comparing yourself to influencers</strong> — they're on PEDs and/or genetically gifted. Compare yourself to your week-1 photo.</li>
+    </ul></div>
+    <div class="pc-box pros"><h4>Start doing this</h4><ul>
+      <li><strong>Pick 3 fixed days a week</strong> — same days, same time. Decision fatigue kills consistency.</li>
+      <li><strong>Track lifts in a notebook or app</strong> — Strong, Hevy, or Notes. You can't improve what you don't measure.</li>
+      <li><strong>Eat protein at every meal</strong> — split your daily target across 4 meals; easier than 2 huge ones.</li>
+      <li><strong>Sleep 7–8 hours minimum</strong> — recovery happens here, not in the gym.</li>
+      <li><strong>Learn 6 exercises well, not 60 badly</strong> — squat, bench, deadlift, OHP, row, pull-up. Master these first.</li>
+      <li><strong>Take progress photos monthly</strong> — same time, same lighting, same pose. Scale lies; photos don't.</li>
+    </ul></div>
+  </div>
 </section>
 
 <section class="footer-note">
