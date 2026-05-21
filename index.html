@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym 101 for Indian Beginners — A No-BS Starter Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #fafaf7;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --ink-muted: #5a5a55;
+    --ink-soft: #888880;
+    --border: rgba(0,0,0,0.08);
+    --border-strong: rgba(0,0,0,0.16);
+    --accent: #2D7D46;
+    --accent-bg: #E2F0E5;
+    --green: #3B6D11;
+    --green-bg: #EAF3DE;
+    --red: #A32D2D;
+    --red-bg: #FCEBEB;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.65; font-size: 15px; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 48px 32px 80px; }
+  .header { border-bottom: 1px solid var(--border-strong); padding-bottom: 28px; margin-bottom: 40px; }
+  .eyebrow { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 12px; font-weight: 500; }
+  h1 { font-size: 34px; line-height: 1.2; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 14px; color: var(--accent); }
+  .sub { font-size: 17px; color: var(--ink-muted); max-width: 720px; line-height: 1.55; }
+  .meta { margin-top: 20px; display: flex; gap: 24px; font-size: 13px; color: var(--ink-soft); flex-wrap: wrap; }
+  .meta span strong { color: var(--ink); font-weight: 500; }
+  h2 { font-size: 24px; font-weight: 500; margin: 56px 0 8px; letter-spacing: -0.005em; }
+  h2 .num { color: var(--ink-soft); font-weight: 400; margin-right: 12px; }
+  h3 { font-size: 18px; font-weight: 500; margin: 28px 0 10px; }
+  p { margin-bottom: 14px; color: var(--ink); }
+  p.lead { font-size: 16px; color: var(--ink-muted); margin-bottom: 22px; }
+  .tldr { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 8px; padding: 22px 26px; margin: 24px 0 8px; }
+  .tldr h3 { margin-top: 0; font-size: 15px; color: var(--accent); letter-spacing: 0.02em; }
+  .tldr ul { padding-left: 18px; margin-top: 8px; }
+  .tldr li { margin-bottom: 6px; font-size: 14.5px; color: var(--ink); }
+  .country-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0 8px; }
+  .country-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px 22px; }
+  .country-card .flag { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 6px; font-weight: 500; }
+  .country-card h3 { margin: 0 0 4px; font-size: 17px; }
+  .country-card .tag { font-size: 12.5px; color: var(--ink-muted); margin-bottom: 14px; line-height: 1.4; }
+  .country-card .stat-row { display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; border-top: 1px solid var(--border); }
+  .country-card .stat-row:first-of-type { border-top: 0; }
+  .country-card .stat-row .k { color: var(--ink-soft); }
+  .country-card .stat-row .v { font-weight: 500; color: var(--ink); }
+  .cost-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 18px 22px; margin: 14px 0; }
+  .cost-card table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  .cost-card th { text-align: left; padding: 8px 6px; color: var(--ink-soft); font-weight: 500; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 1px solid var(--border); }
+  .cost-card td { padding: 10px 6px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  .cost-card tr:last-child td { border-bottom: 0; }
+  .footer-note { margin-top: 56px; padding: 18px 22px; background: rgba(0,0,0,0.025); border-radius: 8px; font-size: 12.5px; color: var(--ink-muted); line-height: 1.55; }
+  @media (max-width: 760px) {
+    .wrap { padding: 32px 18px 64px; }
+    .country-grid { grid-template-columns: 1fr; }
+    h1 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="header">
+  <div class="eyebrow">Fitness guide · built for absolute beginners in India</div>
+  <h1>Gym 101 for Indian beginners</h1>
+  <p class="sub">A no-bullshit starter guide to your first 12 weeks of training — what to actually do, what to eat (within Indian food culture), and what to ignore in the noise of fitness influencer content.</p>
+  <div class="meta">
+    <span><strong>Skill level:</strong> Never lifted before</span>
+    <span><strong>Budget:</strong> ₹1,000–2,500/month gym membership</span>
+    <span><strong>Time:</strong> 45 min × 3–4 days a week</span>
+  </div>
+</header>
+
+<section>
+  <div class="tldr">
+    <h3>The 30-second answer</h3>
+    <ul>
+      <li><strong>Consistency &gt; program.</strong> Going 3x/week for 6 months beats any "optimal" routine you do for 2 weeks. Pick something simple and just show up.</li>
+      <li><strong>Protein is the only macro you'll under-eat.</strong> Indian veg diets are heavy on carbs and light on protein. Target 1.2–1.6g per kg bodyweight, daily, non-negotiable.</li>
+      <li><strong>Sleep beats supplements.</strong> 8 hours of sleep does more for your gains than any pre-workout, fat burner, or BCAA. Save your money.</li>
+      <li><strong>Gym &gt;&gt; home for beginners.</strong> Equipment, atmosphere, and forced commitment win. Home workouts plateau within 6 weeks for most people.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">01</span>Pick your goal first — they need different plans</h2>
+  <p class="lead">Going to the gym "to get fit" is too vague. Pick one of these four and your entire plan changes.</p>
+
+  <div class="country-grid">
+    <div class="country-card" style="border-top: 3px solid #C04A4A;">
+      <div class="flag">Goal A</div>
+      <h3>Lose fat (visible abs, smaller waist)</h3>
+      <div class="tag">Most common starting goal. Requires a calorie deficit + strength training to keep muscle.</div>
+      <div class="stat-row"><span class="k">Training</span><span class="v">3 strength + 2 cardio days</span></div>
+      <div class="stat-row"><span class="k">Diet focus</span><span class="v">Calorie deficit, high protein</span></div>
+      <div class="stat-row"><span class="k">Realistic timeline</span><span class="v">3–6 months for visible change</span></div>
+      <div class="stat-row"><span class="k">Common mistake</span><span class="v">Too much cardio, not enough lifting</span></div>
+    </div>
+    <div class="country-card" style="border-top: 3px solid #2D7D46;">
+      <div class="flag">Goal B</div>
+      <h3>Build muscle (bigger arms, shoulders, back)</h3>
+      <div class="tag">"Bulking" goal. Slow weight gain + heavy lifting. Indian skinny guys recover fast — use it.</div>
+      <div class="stat-row"><span class="k">Training</span><span class="v">4–5 strength days</span></div>
+      <div class="stat-row"><span class="k">Diet focus</span><span class="v">Calorie surplus, high protein</span></div>
+      <div class="stat-row"><span class="k">Realistic timeline</span><span class="v">6–12 months for visible muscle</span></div>
+      <div class="stat-row"><span class="k">Common mistake</span><span class="v">Not eating enough; "dirty bulking"</span></div>
+    </div>
+    <div class="country-card" style="border-top: 3px solid #1F6FA8;">
+      <div class="flag">Goal C</div>
+      <h3>General health (energy, posture, mood)</h3>
+      <div class="tag">Underrated goal. Just being a strong, mobile, well-rested human. No physique target.</div>
+      <div class="stat-row"><span class="k">Training</span><span class="v">2 strength + 2 cardio days</span></div>
+      <div class="stat-row"><span class="k">Diet focus</span><span class="v">Maintenance, balanced</span></div>
+      <div class="stat-row"><span class="k">Realistic timeline</span><span class="v">2–4 weeks to feel better</span></div>
+      <div class="stat-row"><span class="k">Common mistake</span><span class="v">Skipping strength for "just cardio"</span></div>
+    </div>
+    <div class="country-card" style="border-top: 3px solid #8D5BB0;">
+      <div class="flag">Goal D</div>
+      <h3>Sport-specific (cricket, football, badminton)</h3>
+      <div class="tag">Train for performance, not aesthetics. Build power, speed, and sport-specific conditioning.</div>
+      <div class="stat-row"><span class="k">Training</span><span class="v">2 strength + sport practice</span></div>
+      <div class="stat-row"><span class="k">Diet focus</span><span class="v">Maintenance, carb-heavy on game days</span></div>
+      <div class="stat-row"><span class="k">Realistic timeline</span><span class="v">3 months for noticeable boost</span></div>
+      <div class="stat-row"><span class="k">Common mistake</span><span class="v">Bodybuilder splits that don't transfer</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">02</span>The 3 training styles, ranked for beginners</h2>
+  <p class="lead">You'll see hundreds of "splits" online. Only three matter when you're starting out. Pick one and stick with it for 12 weeks.</p>
+
+  <div class="cost-card">
+    <table>
+      <thead>
+        <tr><th>Style</th><th>How it works</th><th>Best for</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Full body 3×/week</strong> <br>(Mon/Wed/Fri)</td><td>Every session works most major muscles. Squat + bench + row in some form, every day.</td><td>Absolute beginners. Best results in least time. The #1 recommendation for first 12 weeks.</td></tr>
+        <tr><td><strong>Upper / Lower split</strong> <br>(4 days)</td><td>Upper body Mon/Thu, lower body Tue/Fri. Recover between sessions.</td><td>Months 4–8. Once full-body feels easy and you want more volume.</td></tr>
+        <tr><td><strong>Push / Pull / Legs</strong> <br>(6 days)</td><td>Push (chest, shoulders, triceps) → Pull (back, biceps) → Legs. Repeat.</td><td>Year 2+. Only after you've trained consistently 6+ months. Too much volume for beginners.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size: 13px; color: var(--ink-soft); margin-top: 8px;">If you remember one thing: <strong>start with full body 3×/week.</strong> Every "bro" who tells you to do "chest day, back day, arm day" is giving you a routine designed for someone with 2 years of experience. You're not them yet.</p>
+</section>
+
+<section class="footer-note">
+  <strong>About this guide:</strong> Written for Indian beginners with zero gym experience, prioritizing what works in Indian gyms and food culture. Always check with a doctor before starting if you have any pre-existing conditions (high BP, diabetes, joint issues).
+</section>
+
+</div>
+</body>
+</html>
