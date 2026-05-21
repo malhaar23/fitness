@@ -39,6 +39,7 @@
   .tldr ul { padding-left: 18px; margin-top: 8px; }
   .tldr li { margin-bottom: 6px; font-size: 14.5px; color: var(--ink); }
   .country-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 24px 0 8px; }
+  .country-grid.three { grid-template-columns: repeat(3, 1fr); }
   .country-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 20px 22px; }
   .country-card .flag { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 6px; font-weight: 500; }
   .country-card h3 { margin: 0 0 4px; font-size: 17px; }
@@ -55,7 +56,7 @@
   .footer-note { margin-top: 56px; padding: 18px 22px; background: rgba(0,0,0,0.025); border-radius: 8px; font-size: 12.5px; color: var(--ink-muted); line-height: 1.55; }
   @media (max-width: 760px) {
     .wrap { padding: 32px 18px 64px; }
-    .country-grid { grid-template-columns: 1fr; }
+    .country-grid, .country-grid.three { grid-template-columns: 1fr; }
     h1 { font-size: 26px; }
   }
 </style>
@@ -89,7 +90,6 @@
 <section>
   <h2><span class="num">01</span>Pick your goal first — they need different plans</h2>
   <p class="lead">Going to the gym "to get fit" is too vague. Pick one of these four and your entire plan changes.</p>
-
   <div class="country-grid">
     <div class="country-card" style="border-top: 3px solid #C04A4A;">
       <div class="flag">Goal A</div>
@@ -133,7 +133,6 @@
 <section>
   <h2><span class="num">02</span>The 3 training styles, ranked for beginners</h2>
   <p class="lead">You'll see hundreds of "splits" online. Only three matter when you're starting out. Pick one and stick with it for 12 weeks.</p>
-
   <div class="cost-card">
     <table>
       <thead>
@@ -147,6 +146,42 @@
     </table>
   </div>
   <p style="font-size: 13px; color: var(--ink-soft); margin-top: 8px;">If you remember one thing: <strong>start with full body 3×/week.</strong> Every "bro" who tells you to do "chest day, back day, arm day" is giving you a routine designed for someone with 2 years of experience. You're not them yet.</p>
+</section>
+
+<section>
+  <h2><span class="num">03</span>Gym vs home setup — what to actually spend</h2>
+  <p class="lead">Equipment doesn't make you fit. But the right setup removes friction. Here's the honest cost of each path.</p>
+
+  <div class="country-grid three">
+    <div class="country-card" style="border-top: 3px solid #2D7D46;">
+      <div class="flag">Option A · Local gym</div>
+      <h3>Best for 95% of beginners</h3>
+      <div class="tag">Cult.fit, Talwalkars, neighborhood "iron gyms". Equipment, mirrors, atmosphere, accountability.</div>
+      <div class="stat-row"><span class="k">Cost</span><span class="v">₹1,000–2,500/month</span></div>
+      <div class="stat-row"><span class="k">Equipment</span><span class="v">Everything you need</span></div>
+      <div class="stat-row"><span class="k">Plateau risk</span><span class="v">Low — can always go heavier</span></div>
+      <div class="stat-row"><span class="k">Best for</span><span class="v">Anyone serious about progress</span></div>
+    </div>
+    <div class="country-card" style="border-top: 3px solid #C7912E;">
+      <div class="flag">Option B · Home minimal</div>
+      <h3>Bodyweight + 2 dumbbells</h3>
+      <div class="tag">Push-ups, pull-ups (if you have a bar), squats, dumbbell rows. Works for 3–4 months.</div>
+      <div class="stat-row"><span class="k">Cost</span><span class="v">₹3,000 one-time (dumbbells + bar)</span></div>
+      <div class="stat-row"><span class="k">Equipment</span><span class="v">2× 10kg dumbbells, door pull-up bar</span></div>
+      <div class="stat-row"><span class="k">Plateau risk</span><span class="v">High after month 3</span></div>
+      <div class="stat-row"><span class="k">Best for</span><span class="v">Trying it out without commitment</span></div>
+    </div>
+    <div class="country-card" style="border-top: 3px solid #C04A4A;">
+      <div class="flag">Option C · Home serious</div>
+      <h3>Full home gym</h3>
+      <div class="tag">Squat rack, barbell, plates, bench. Real strength training at home.</div>
+      <div class="stat-row"><span class="k">Cost</span><span class="v">₹35,000–80,000 one-time</span></div>
+      <div class="stat-row"><span class="k">Equipment</span><span class="v">Rack + 60kg plates + bench + bar</span></div>
+      <div class="stat-row"><span class="k">Plateau risk</span><span class="v">Very low</span></div>
+      <div class="stat-row"><span class="k">Best for</span><span class="v">Year 2+, when you know you'll stick</span></div>
+    </div>
+  </div>
+  <p style="font-size: 13px; color: var(--ink-soft);">Skip the ₹15,000 "home multi-gym" Decathlon contraptions — flimsy, awkward angles, and you'll outgrow them in 2 months. Either go cheap (Option B) or invest properly (Option C). The middle ground is wasted money.</p>
 </section>
 
 <section class="footer-note">
